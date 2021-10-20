@@ -11,7 +11,7 @@ function Soft() {
 
   let fetch = async () => {
     try {
-      let getall = await axios.get("http://localhost:3001/soft");
+      let getall = await axios.get("https://yadharthmdb1.herokuapp.com/soft");
       setall([...getall.data]);
     } catch (error) {}
   };

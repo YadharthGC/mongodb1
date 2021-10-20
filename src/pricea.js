@@ -10,7 +10,9 @@ function Pricea() {
 
   let fetch = async () => {
     try {
-      let getpricea = await axios.get("http://localhost:3001/price1");
+      let getpricea = await axios.get(
+        "https://yadharthmdb1.herokuapp.com/price1"
+      );
       setpricea([...getpricea.data]);
     } catch (error) {}
   };

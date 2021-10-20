@@ -11,7 +11,7 @@ function Nm() {
 
   let fetch = async () => {
     try {
-      let getall = await axios.get("http://localhost:3001/");
+      let getall = await axios.get("https://yadharthmdb1.herokuapp.com/");
       setall([...getall.data]);
     } catch (error) {}
   };

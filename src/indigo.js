@@ -11,7 +11,7 @@ function Ind() {
 
   let fetch = async () => {
     try {
-      let getall = await axios.get("http://localhost:3001/ind");
+      let getall = await axios.get("https://yadharthmdb1.herokuapp.com/ind");
       setall([...getall.data]);
     } catch (error) {}
   };

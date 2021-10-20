@@ -11,7 +11,7 @@ function Delete() {
 
   let fetch = async () => {
     try {
-      let getall = await axios.get("http://localhost:3001/delete");
+      let getall = await axios.get("https://yadharthmdb1.herokuapp.com/delete");
       setall([...getall.data]);
     } catch (error) {}
   };

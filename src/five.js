@@ -10,7 +10,9 @@ function Five() {
 
   let fetch = async () => {
     try {
-      let getpriceb = await axios.get("http://localhost:3001/five");
+      let getpriceb = await axios.get(
+        "https://yadharthmdb1.herokuapp.com/five"
+      );
       setfive([...getpriceb.data]);
     } catch (error) {}
   };

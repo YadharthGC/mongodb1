@@ -11,7 +11,7 @@ function Ten() {
 
   let fetch = async () => {
     try {
-      let getall = await axios.get("http://localhost:3001/ten");
+      let getall = await axios.get("https://yadharthmdb1.herokuapp.com/ten");
       setall([...getall.data]);
     } catch (error) {}
   };
